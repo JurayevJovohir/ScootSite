@@ -1,0 +1,104 @@
+.scooter {
+    padding: 153px 0;
+    background-image: url("../../images/bg-hero.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.scooter-inner {
+    width: 100%;
+    max-width: 500px;
+}
+
+.scooter__title {
+    margin: 0;
+    margin-bottom: 40px;
+    font-family: 'Space Mono';
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -2.5px;
+    color: #FFFFFF;
+}
+
+.scooter__content {
+    width: 100%;
+    max-width: 405px;
+    margin-left: auto;
+}
+
+.scooter__text {
+    font-family: 'Lexend Deca';
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 40px;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+.scooter__link {
+    display: inline-block;
+    font-family: 'Space Mono';
+    font-weight: 700;
+    padding: 14px 39px;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #FCB72B;
+    border: 3px solid transparent;
+}
+
+.scooter__link:hover {
+    color: #FCB72B;
+    background-color: transparent;
+    border: 3px solid #FCB72B;
+}
+
+@media only screen and (max-width:768px) {
+    .scooter{
+        flex-direction: column;
+        background-image: url("../../../images/bg-hero-tablet.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .scooter-inner,.scooter__content{
+        margin: 0 auto;
+    }
+
+    .scooter__title, .scooter__text{
+        text-align: center;
+    }
+
+    .scooter__link{
+        display: block;
+        width: 180px;
+        height: 53px;
+        font-size: 12px;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and(max-width:576px) {
+
+    .scooter{
+        flex-direction: column;
+        background-image: url("../../../images/bg-hero-mobile.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .scooter__title{
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .scooter__text{
+        font-size: 12px;
+    }
+}
