@@ -1,0 +1,96 @@
+.expending {
+    margin-bottom: 200px;
+}
+
+.expending-inner {
+    padding: 117px 0;   
+    background: url("../../../images/expending.png");
+    background-repeat: no-repeat;
+    background-position: calc(50% + 565px) calc(50% - -54px);
+
+    &:nth-child(2){
+        background-image: url("../../../images/expending2.png");
+        background-position:  calc(50% + -635px) calc(50% - -50px);    
+    }
+
+    &:last-child{
+        background-image: url("../../../images/expending3.png");
+        background-position: calc(50% + 640px) calc(50% - -54px);
+    }
+}
+
+
+
+.expending__content {
+    width: 100%;
+    max-width: 455px;
+}
+
+.right-content{
+    margin-left: auto;
+}
+
+.expending__title {
+    margin: 0;
+    margin-bottom: 24px;
+    font-family: 'Space Mono';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14286px;
+    color: #495567;
+}
+
+.expending__text {
+    margin: 0;
+    margin-bottom: 40px;
+    font-family: 'Lexend Deca';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #939CAA
+}
+
+@media only screen and (max-width:768px){
+    .expending-inner{
+        padding-top: 500px;
+        background-position: calc(50% + 190px) calc(50% + -240px);
+
+        &:nth-child(2){
+            background-position: calc(50% + -275px) calc(50% + -245px);
+        }
+
+        &:last-child{
+            background-position: calc(50% + 265px) calc(50% + -242px);
+        }
+    }
+
+    .expending__content{
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+}
+
+@media only screen and (max-width:576px) {
+    .expending-inner{
+        padding-top: 367px;
+        background-image: url("../../../images/expending-mobile.png");
+        background-position: calc(50% + 12px) calc(50% + -250px);
+
+        &:nth-child(2){
+            background-image: url("../../../images/expending2-mobile.png");
+            background-position: calc(50% + -16px) calc(50% + -250px);
+        }
+
+        &:last-child{
+            background-image: url("../../../images/expending3-mobile.png");
+            background-position: calc(50% + 12px) calc(50% + -250px);
+        }
+    }
+
+    .expending__title{
+        font-size: 32px;
+        line-height: 32px;
+    }
+}

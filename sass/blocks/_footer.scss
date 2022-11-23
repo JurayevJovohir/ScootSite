@@ -1,0 +1,136 @@
+.footer {}
+
+.footer-inner {
+    background-image: url("../../images/footer-bgi.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.footer__top {
+    display: flex;
+    align-items: center;
+    padding: 102px 0;
+}
+
+.footer__top-title {
+    width: 100%;
+    max-width: 415px;
+}
+
+.top-title {
+    display: inline-block;
+    font-family: 'Space Mono';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14286px;
+    color: #FFFFFF;
+}
+
+.footer__top-links {
+    width: 100%;
+    max-width: 359px;
+    margin-left: auto;
+}
+
+.top-link {
+    text-decoration: none;
+}
+
+
+.footer-navigation{
+    background-color: #333A44;
+}
+
+.footer__bottom {
+    display: flex;
+    align-items: center;
+    padding: 35px 0 32px;
+}
+
+.footer-nav {
+    display: flex;
+    margin-left: 58px;
+}
+
+.footer-nav__list {
+    display: flex;
+}
+
+.footer-nav__item + .footer-nav__item {
+    margin-left: 32px;
+}
+
+.footer-nav__link {
+    font-family: 'Space Mono';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    color: #939CAA;
+}
+
+.social-networks{
+    margin-left: auto;
+}
+
+.social-networks__link + .social-networks__link{
+    margin-left: 24px;
+}
+
+@media only screen and (max-width:768px) {
+    .footer__top{
+        flex-wrap: wrap;
+    }
+    .footer__top-title, .footer__top-links{
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .footer__top-links{
+        margin-top: 40px;
+    }
+
+    .footer-nav{
+        margin: 0;
+        margin-left: 30px;
+    }
+}
+
+@media only screen and (max-width:576px){
+    .footer-nav,
+    .footer__bottom,
+    .footer-nav__list,
+    .social-networks{
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .top-title{
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+    .footer-navigation{
+        padding: 64px 0 90px;
+    }
+
+    .footer-nav{
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .footer-nav__item + .footer-nav__item{
+        margin-left: 0;
+        margin-top: 16px;
+    }
+
+    .social-networks{
+        margin-top: 85px;
+    }
+
+
+
+
+}
